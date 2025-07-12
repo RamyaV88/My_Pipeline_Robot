@@ -25,19 +25,19 @@ Resource         ../Resources/PageObject/KeywordDefinitionFiles/loginpage.robot
 *** Test Cases ***
 # Test case to validate the error message for an invalid login attempt
 Validate the Invalid Login Error Message
-    [Tags]    ERROR_MESSAGES
+    [Tags]    ERRORMESSAGES
     Enter User Credentials And Login    ${invalid_username}    ${invalid_password}
     Verify Notification Message    ${login_error_element}    ${invalid_login_error_message}
 
 # Test case to validate the error message when the username field is left blank
 Validate the Blank Username Login Error Message
-    [Tags]    ERROR_MESSAGES
+    [Tags]    ERRORMESSAGES
     Enter User Credentials And Login    ${blank_field}    ${valid_password}
     Verify Notification Message    ${login_error_element}    ${blank_user_error_message}
 
 # Test case to validate the error message when the password field is left blank
 Validate the Blank Password Login Error Message
-    [Tags]    ERROR_MESSAGES
+    [Tags]    ERRORMESSAGES
     Enter User Credentials And Login    ${valid_username}    ${blank_field}
     Verify Notification Message    ${login_error_element}    ${blank_password_error_message}
 

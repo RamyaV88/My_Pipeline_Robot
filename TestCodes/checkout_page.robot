@@ -65,7 +65,7 @@ Validate Item Total Of Cart
 
 # Test case to validate error messages in checkout details
 Validate Checkout Details Error Messages
-    [Tags]    ERROR_MESSAGES
+    [Tags]    ERRORMESSAGES
     # Login to the webpage
     Login Into The Webpage
     # Add items to the cart
