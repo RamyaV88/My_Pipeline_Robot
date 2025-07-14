@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Run Tests') {
             steps {
-                bat '"C:\\Users\\Ketki Ashtankar\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m robot Tests'
+                bat '"C:\\Users\\Ketki Ashtankar\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m robot TestCodes'
             }
         }
     }
