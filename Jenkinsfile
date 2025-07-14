@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Install Requirements') {
             steps {
-                bat 'pip install -r requirements.txt'
+                bat '"C:\\Users\\Ketki Ashtankar\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m pip install -r requirements.txt'
             }
         }
         stage('Run Tests') {
             steps {
-                bat 'robot Tests'
+                bat '"C:\\Users\\Ketki Ashtankar\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m robot Tests'
             }
         }
     }
